@@ -1,4 +1,7 @@
--- Exercise 2 (Querying for product ID, product name, and unit price from products table)
+-- Exercise 2 Pt.1
+SELECT * FROM products;
+
+-- Querying for product ID, product name, and unit price from products table
 SELECT ProductId, ProductName, UnitPrice FROM products;
 
 -- Querying for product ID, product name, and unit price from products table, order by Price in ASCENDING 
@@ -36,3 +39,7 @@ SELECT DISTINCT Title FROM Employees;
 -- Querying for all employees that have a salary between 2000 and 2500
 SELECT EmployeeID, LastName, FirstName, Title FROM Employees
 WHERE Salary BETWEEN 2000 AND 2500;
+
+-- Querying for all products from supplier Tokyo Traders
+SELECT ProductID, ProductName, UnitPrice, SupplierID FROM Products
+WHERE SupplierID = 4;
